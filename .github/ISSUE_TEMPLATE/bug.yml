@@ -1,0 +1,30 @@
+name: Report a problem
+description: Something in AInode does not work the way it should.
+title: "Problem: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what AInode did instead. A screenshot helps.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AInode version
+      description: AInode fills this in when you use Send feedback in the app.
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: The operating system, the machine and its memory.
+  - type: textarea
+    id: models
+    attributes:
+      label: Your models (optional)
+      description: Only if you want to share which models you have.
+  - type: markdown
+    attributes:
+      value: Please leave out anything private. Everything here is public.
