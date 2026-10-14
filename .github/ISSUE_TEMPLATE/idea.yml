@@ -1,0 +1,24 @@
+name: Suggest an idea
+description: Something AInode could do, or do better.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What you would like, and what it would help you with.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AInode version
+  - type: input
+    id: system
+    attributes:
+      label: System
+  - type: textarea
+    id: models
+    attributes:
+      label: Your models (optional)

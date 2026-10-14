@@ -1,0 +1,31 @@
+name: Ask for a model
+description: An open model you would like AInode to offer.
+title: "Model: "
+labels: ["model request"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Which model
+      description: Its name, and a link to its page if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What you would use it for
+  - type: markdown
+    attributes:
+      value: AInode offers only models whose licence lets anyone run and share them, small enough to run on a normal computer.
+  - type: input
+    id: version
+    attributes:
+      label: AInode version
+  - type: input
+    id: system
+    attributes:
+      label: System
+  - type: textarea
+    id: models
+    attributes:
+      label: Your models (optional)
